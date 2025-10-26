@@ -2,7 +2,7 @@ public partial class ATmega328P
 {
     public short PC { get; private set; }
     public short SP { get; private set; }
-    
+
     public ATmega328P()
     {
         SREG = new StatusRegister();
@@ -17,7 +17,12 @@ public partial class ATmega328P
     {
         UnityEngine.Debug.Log($"0x{register.Value:X2}");
     }
-    
+
+    public void Debug(Register8 high, Register8 low)
+    {
+        UnityEngine.Debug.Log($"0x{high.Value << 8 | low.Value:X4}");
+    }
+
     public void Debug()
     {
         UnityEngine.Debug.Log($"{SREG}");
