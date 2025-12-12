@@ -1,0 +1,7 @@
+﻿{
+  "name": "Runtime",
+  "rootNamespace": "Mastardy.Runtime",
+  "references": [
+    "Unity.InputSystem"
+  ]
+}

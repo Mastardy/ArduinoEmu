@@ -1,7 +1,4 @@
-using System;
-using Mastardy.Runtime;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 namespace Mastardy.Runtime
 {
@@ -10,20 +7,26 @@ namespace Mastardy.Runtime
         private static readonly int baseColor = Shader.PropertyToID("_BaseColor");
         private int gridMask;
 
-        [SerializeField] private GameObject gridPreviewPrefab;
+        [SerializeField]
+        private GameObject gridPreviewPrefab;
 
-        [SerializeField] private Vector3 tileSize;
+        [SerializeField]
+        private Vector3 tileSize;
+
         private Vector3 tileOffset => tileSize / 2;
 
-        [SerializeField] private Color freeColor = Color.green;
-        [SerializeField] private Color occupiedColor = Color.red;
+        [SerializeField]
+        private Color freeColor = Color.green;
+
+        [SerializeField]
+        private Color occupiedColor = Color.red;
 
         private GameObject gridPreviewInstance;
 
         private void Start()
         {
             gridMask = LayerMask.GetMask("Grid");
-            
+
             gridPreviewInstance = Instantiate(gridPreviewPrefab);
             gridPreviewInstance.SetActive(false);
 
