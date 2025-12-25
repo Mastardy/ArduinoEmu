@@ -2911,6 +2911,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   m_MCUConfig: {fileID: 11400000, guid: 1df00b3fda87ad0489962daa5aa31b9f, type: 2}
+  m_SimulationSpeed: 1
+  m_DigitalPins:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  m_AnalogPins:
+  - {fileID: 6946696547620314955}
+  - {fileID: 8644660475752117295}
+  - {fileID: 5838489285968576569}
+  - {fileID: 7792116144792239507}
+  - {fileID: 6369407755048980053}
+  - {fileID: 6884942992152037960}
+  m_Miscellaneous: []
 --- !u!1 &3761645030779890300
 GameObject:
   m_ObjectHideFlags: 0
@@ -3794,6 +3818,7 @@ GameObject:
   - component: {fileID: 5858975090262307304}
   - component: {fileID: 6369407755048980052}
   - component: {fileID: 3637594928835781049}
+  - component: {fileID: 6369407755048980053}
   m_Layer: 0
   m_Name: FPin.014
   m_TagString: Untagged
@@ -3828,6 +3853,7 @@ GameObject:
   - component: {fileID: 1924271772999932103}
   - component: {fileID: 2879264990712493218}
   - component: {fileID: 1136448532890619181}
+  - component: {fileID: 5838489285968576569}
   m_Layer: 0
   m_Name: FPin.012
   m_TagString: Untagged
@@ -3835,6 +3861,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &5838489285968576569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5838489285968576568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c118180e9526a145ac77ef125d0a802, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Runtime::Mastardy.Runtime.Pin
+  Mode: 0
+  PinNumber: 0
+  Value: 0
 --- !u!4 &5858975090262307304
 Transform:
   m_ObjectHideFlags: 0
@@ -3992,6 +4033,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5764600650093522939}
   m_Mesh: {fileID: -8831208086767455176, guid: b06f4373f32f4e84982f1f942686974a, type: 3}
+--- !u!114 &6369407755048980053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5764600650093522939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c118180e9526a145ac77ef125d0a802, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Runtime::Mastardy.Runtime.Pin
+  Mode: 0
+  PinNumber: 0
+  Value: 0
 --- !u!33 &6394310452447350855
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -4249,6 +4305,7 @@ GameObject:
   - component: {fileID: 2811363874566598706}
   - component: {fileID: 5263339782135528375}
   - component: {fileID: 3261279865663870540}
+  - component: {fileID: 6884942992152037960}
   m_Layer: 0
   m_Name: FPin.015
   m_TagString: Untagged
@@ -4256,6 +4313,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &6884942992152037960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6884942992152037959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c118180e9526a145ac77ef125d0a802, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Runtime::Mastardy.Runtime.Pin
+  Mode: 0
+  PinNumber: 0
+  Value: 0
 --- !u!1 &6946696547620314954
 GameObject:
   m_ObjectHideFlags: 0
@@ -4267,6 +4339,7 @@ GameObject:
   - component: {fileID: 3909081097087408939}
   - component: {fileID: 4156551910887545404}
   - component: {fileID: 3262111774995458826}
+  - component: {fileID: 6946696547620314955}
   m_Layer: 0
   m_Name: FPin.010
   m_TagString: Untagged
@@ -4274,6 +4347,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &6946696547620314955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6946696547620314954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c118180e9526a145ac77ef125d0a802, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Runtime::Mastardy.Runtime.Pin
+  Mode: 0
+  PinNumber: 0
+  Value: 0
 --- !u!1 &7101672466591402601
 GameObject:
   m_ObjectHideFlags: 0
@@ -4329,6 +4417,7 @@ GameObject:
   - component: {fileID: 7792116144792239506}
   - component: {fileID: 6579681149916640415}
   - component: {fileID: 283025537302358509}
+  - component: {fileID: 7792116144792239507}
   m_Layer: 0
   m_Name: FPin.013
   m_TagString: Untagged
@@ -4719,6 +4808,7 @@ GameObject:
   - component: {fileID: 1298322092343267930}
   - component: {fileID: 6394310452447350855}
   - component: {fileID: 8644660475752117294}
+  - component: {fileID: 8644660475752117295}
   m_Layer: 0
   m_Name: FPin.011
   m_TagString: Untagged
@@ -4862,6 +4952,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2544964787933017729}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7792116144792239507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7169913073606374310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c118180e9526a145ac77ef125d0a802, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Runtime::Mastardy.Runtime.Pin
+  Mode: 0
+  PinNumber: 0
+  Value: 0
 --- !u!4 &7793608590837269148
 Transform:
   m_ObjectHideFlags: 0
@@ -5290,6 +5395,21 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &8644660475752117295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7718481998440379886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c118180e9526a145ac77ef125d0a802, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Runtime::Mastardy.Runtime.Pin
+  Mode: 0
+  PinNumber: 0
+  Value: 0
 --- !u!1 &8824530917013992982
 GameObject:
   m_ObjectHideFlags: 0

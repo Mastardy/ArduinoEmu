@@ -12,6 +12,25 @@ namespace Mastardy.Runtime
         [SerializeField]
         private float m_SimulationSpeed = 1.0f;
 
+        [Header("Pins")] [SerializeField]
+        private List<Pin> m_Pins = new();
+
+        private List<DigitalPin> c_DigitalPins;
+
+        private List<DigitalPin> m_DigitalPins
+        {
+            get
+            {
+                if (c_DigitalPins != null) return c_DigitalPins;
+                
+                c_DigitalPins = new List<DigitalPin>();
+                foreach (var pin in m_Pins)
+                {
+                    if (pin)
+                }
+            }
+        }
+
         private Program m_Program;
         private Memory m_Memory;
 
@@ -107,7 +126,7 @@ namespace Mastardy.Runtime
                 case OpCode.PIN_MODE:
                 {
                     var pin = instruction.Operands[0] is string variable ? (int)m_Program.Variables[variable] : (int)instruction.Operands[0];
-                    SetPinMode(pin, (int)instruction.Operands[1]);
+                    SetDigitalPinMode(pin, (int)instruction.Operands[1]);
                 }
                     cycles = 4;
                     break;
@@ -131,14 +150,21 @@ namespace Mastardy.Runtime
             return cycles;
         }
 
-        private void SetPinMode(int pin, int mode)
+        private void SetDigitalPinMode(int pin, int mode)
         {
             Debug.Log($"Setting Pin({pin}) to {(mode == 0 ? "Output" : mode == 1 ? "Input" : "Input_Pullup")}");
+            m_DigitalPins[pin].Mode = (PinType)mode;
         }
 
         private void DigitalWrite(int pin, int value)
         {
             Debug.Log($"Setting Pin({pin}) to {(value == 0 ? "0V (LOW)" : "5V (HIGH)")}");
+            m_DigitalPins[pin].Value = value;
+        }
+
+        private int DigitalRead(int pin)
+        {
+            return 0;
         }
 
         private void LoadProgram(List<Instruction> program)
